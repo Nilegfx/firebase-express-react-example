@@ -1,0 +1,17 @@
+{
+  "name": "firebase-express-react-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn --cwd client start\" \"firebase serve\"",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "concurrently": "5.0.0"
+  }
+}
